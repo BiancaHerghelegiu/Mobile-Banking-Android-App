@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SelectActivity"
+    android:background="@color/colorSortofWhite"
+    tools:showIn="@layout/activity_select">
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="127dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgMoney"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info" />
+
+    <ImageView
+        android:id="@+id/imgMoney"
+        android:layout_width="206dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moneyicon" />
+
+    <ImageView
+        android:id="@+id/imgHistory"
+        android:layout_width="189dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgMoney"
+        app:srcCompat="@drawable/history" />
+
+    <Button
+        android:id="@+id/btnInfos"
+        android:layout_width="96dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/imgInfo"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_infos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="290dp"
+        android:text="@string/title_infos"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgInfo" />
+
+    <TextView
+        android:id="@+id/tv_currentBallance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/current_balance"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgMoney" />
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="220dp"
+        android:text="@string/title_History"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgHistory" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="114dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="410dp"
+        android:layout_marginBottom="120dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toEndOf="@+id/imgHistory"
+        app:layout_constraintTop_toBottomOf="@+id/tv_infos"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <Button
+        android:id="@+id/btnCurentBal"
+        android:layout_width="109dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReceivedTransactions"
+        android:layout_width="145dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@+id/imgHistory"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurentBal" />
+
+    <ImageView
+        android:id="@+id/imgReceivedTranz"
+        android:layout_width="215dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgHistory"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurentBal"
+        app:srcCompat="@drawable/receivemoney" />
+
+    <TextView
+        android:id="@+id/tv_receivedTransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/received_transactions"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_history"
+        app:layout_constraintTop_toBottomOf="@+id/imgReceivedTranz" />
+
+    <Button
+        android:id="@+id/btnDeleteAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_rounded_main"
+        android:text="@string/delete_account"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_receivedTransactions" />
+
+    <Button
+        android:id="@+id/btnRaport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded_main"
+        android:text="@string/raports"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleteAccount" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

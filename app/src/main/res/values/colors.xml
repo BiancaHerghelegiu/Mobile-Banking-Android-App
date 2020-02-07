@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorLila">#E3CEF6</color>
+    <color name="colorOrange">#c98020</color>
+    <color name="colorGreen">#d5f5dc</color>
+    <color name="colorLightBlue">#A6C899</color>
+    <color name="colorAlmostPink">#E2454C</color>
+    <color name="colorAlmostWhite">#EDE7D9</color>
+    <color name="colorWhitewithpink">#FFEEF2</color>
+    <color name="colorPeachy">#F1BF98</color>
+    <color name="colorBlue">#CBF3F0</color>
+    <color name="colorAlmostLila">#D5CFE1</color>
+    <color name="colorLilaWhite">#E1DEE9</color>
+    <color name="colorGreenBlue">#D2F1E4</color>
+    <color name="colorSortOfGreen">#DDFFD9</color>
+    <color name="colorSortofWhite">#FBFEFB</color>
+    <color name="colorGray">#BDBDBD</color>
+    <color name="forestGreen">#C9DDFF</color>
+    <color name="magenta_chart">#FF00FF</color>
+    <color name="yellow_chart">#FFFF00</color>
+
+
+
+
+
+
+
+
+
+
+
+
+</resources>

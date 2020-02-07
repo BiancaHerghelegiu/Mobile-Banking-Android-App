@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAlmostWhite"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MoneyActivity"
+    tools:showIn="@layout/activity_money">
+    <TextView
+        android:id="@+id/tv_transactions2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"
+        android:text="@string/please_complete_the_details_of_the_transaction" />
+
+    <EditText
+        android:id="@+id/et_beneficiary2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgmoney2"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:inputType="textPersonName"
+        android:hint="@string/beneficiary_name" />
+
+    <ImageView
+        android:id="@+id/imgmoney2"
+        android:layout_width="210dp"
+        android:layout_height="204dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/moneytransparent" />
+
+    <EditText
+        android:id="@+id/et_accountNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/et_beneficiary2"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:hint="@string/account_number" />
+
+    <EditText
+        android:id="@+id/et_amount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/et_accountNumber2"
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:inputType="number"
+        android:hint="@string/amount" />
+
+    <Button
+        android:id="@+id/btn_send2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_amount2"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/button_rounded_transactions"
+        android:text="@string/send_money" />
+
+    <Spinner
+        android:id="@+id/spinner_status"
+        android:layout_below="@+id/et_amount2"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

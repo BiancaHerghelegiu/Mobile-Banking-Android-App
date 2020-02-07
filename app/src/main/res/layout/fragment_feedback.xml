@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSortofWhite"
+    tools:context=".FeedbackFragment">
+
+
+    <ImageView
+        android:id="@+id/imgRating"
+        android:layout_width="196dp"
+        android:layout_height="122dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/rating" />
+
+    <EditText
+        android:id="@+id/etNumeFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Suggestions"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imgRating"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/btnSendFeedback"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentLeft="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSendFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNumeFeedback"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="120dp"
+        android:background="@android:color/transparent"
+        android:text="@string/button_feedback" />
+
+    <ListView
+        android:id="@+id/lvSuggestion"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/ratingBar" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="350dp">
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="TextView"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tv_location"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgtelephone"
+            android:layout_width="36dp"
+            android:layout_height="31dp"
+            android:src="@drawable/telephonelogo" />
+
+        <TextView
+            android:id="@+id/telephone"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_fix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@id/linearlayout_telephone">
+
+        <ImageView
+            android:id="@+id/imgfix"
+            android:layout_width="39dp"
+            android:layout_height="30dp"
+            android:src="@drawable/telephonefix" />
+
+        <TextView
+            android:id="@+id/fix"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            android:textAlignment="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@id/linearlayout_fix">
+
+        <ImageView
+            android:id="@+id/imgemail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/emaillogo" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_height="61dp"
+            android:layout_weight="0.9"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgPocketBank"
+        android:layout_width="165dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/linearlayout_email"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/pocketbank4" />
+</RelativeLayout>

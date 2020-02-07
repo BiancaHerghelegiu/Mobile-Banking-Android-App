@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSortofWhite"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Raports.RaportsActivity"
+    tools:showIn="@layout/activity_raports">
+
+    <ImageView
+        android:id="@+id/imgTransactionAmount"
+        android:layout_width="142dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transactionraport" />
+
+    <TextView
+        android:id="@+id/tv_RaportAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/raport_amount"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTransactionAmount" />
+
+    <ImageView
+        android:id="@+id/imgRaportSend"
+        android:layout_width="206dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RaportAmount"
+        app:srcCompat="@drawable/transactionsend" />
+
+    <TextView
+        android:id="@+id/tv_RaportSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/raport_send"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgRaportSend" />
+
+    <Button
+        android:id="@+id/btnRaportAmount"
+        android:layout_width="155dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="130dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRaportSend"
+        android:layout_width="210dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="58dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RaportAmount" />
+</androidx.constraintlayout.widget.ConstraintLayout>

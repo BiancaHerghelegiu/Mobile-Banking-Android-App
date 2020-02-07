@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSortofWhite"
+    tools:context=".AboutFragment">
+
+    <ImageView
+        android:id="@+id/imgDebitCard"
+        android:layout_width="213dp"
+        android:layout_height="129dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/debitcard" />
+
+    <TextView
+        android:id="@+id/tvAbout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgDebitCard"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:fontFamily="serif"
+        android:text="@string/content_about" />
+
+    <TextView
+        android:id="@+id/tvAbout2"
+        android:layout_below="@+id/tvAbout1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:fontFamily="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content_about2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_below="@+id/tvAbout2"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:fontFamily="serif"
+            android:text="@string/view_all_cities_where_you_can_find_pocketbank"/>
+
+    <Button
+        android:id="@+id/btnMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAbout2"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/button_rounded_main"
+        android:text="@string/view_map" />
+
+</RelativeLayout>

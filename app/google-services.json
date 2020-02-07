@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "29894596518",
+    "firebase_url": "https://pocketbank-ce723.firebaseio.com",
+    "project_id": "pocketbank-ce723",
+    "storage_bucket": "pocketbank-ce723.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29894596518:android:0251cca29d3799351ae167",
+        "android_client_info": {
+          "package_name": "com.example.proiectmobilebanking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "29894596518-km03ctrk9a5emtd04oncr6lmu53k4ml4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDt4O86iahAgSib6bF2z-Hs5K3olK2yFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "29894596518-km03ctrk9a5emtd04oncr6lmu53k4ml4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
